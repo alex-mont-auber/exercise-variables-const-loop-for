@@ -7,9 +7,7 @@ public class Main {
     public static void main(String[] args) {
         // START FASE 1 -> Variables, conversions and console work.
 
-        System.out.println("   ");
-        System.out.println("START FASE 1");
-        System.out.println("   ");
+        System.out.println();
 
         // 1. First test of working app of Java, a simple print with "Hello World".
 
@@ -50,18 +48,13 @@ public class Main {
         System.out.println("Date of Birth: " + AllDateOfBirth);
         //System.out.println("Test without concatenation: " + DayOfBirth + " / " + BirthMonth + " / " + BirthYear);
 
-        System.out.println("   ");
-        System.out.println("END FASE 1");
+        System.out.println();
 
         // END FASE 1
 
         // From this point, the comments only be use for a important comments or clarifications
 
         // START FASE 2 -> Constants.
-
-        System.out.println("   ");
-        System.out.println("START FASE 2");
-        System.out.println("   ");
 
         // 1. Declaration of variables/contants.
 
@@ -82,18 +75,13 @@ public class Main {
 
         System.out.println("Leap years quantity between MyYear and LeapYear: " + QuantityYearsBetween);
 
-        System.out.println("   ");
-        System.out.println("END FASE 2");
+        System.out.println();
 
         // END FASE 2.
 
         // START FASE 3 -> FOR loop
 
-        //For the exercise of year, I modified my real birth year because is not a transition year. And I want appear all responses in                  console, working reasons.
-
-        System.out.println("   ");
-        System.out.println("START FASE 3");
-        System.out.println("   ");
+        //For the exercise of year, I modified my real birth year because is not a transition year. And I want appear all responses in console, working reasons.
 
         boolean VerificationYear = true;
 
@@ -104,10 +92,10 @@ public class Main {
 
             if(i == MyYear ){
                 VerificationYear = true;
-                ResultTrueString = "The result is: " + VerificationYear + ", it's a leap year.";
+                ResultTrueString = "The result is: " + VerificationYear + ", " + MyYear +" it's a leap year.";
             } else {
                 VerificationYear = false;
-                ResultFalseString = "The result is: " + VerificationYear + ", it's not a leap year.";
+                ResultFalseString = "The result is: " + VerificationYear + ", " + MyYear +" it's not a leap year.";
             }
         }
 
@@ -117,16 +105,12 @@ public class Main {
             System.out.println(ResultFalseString);
         }
 
-        System.out.println("   ");
-        System.out.println("END FASE 3");
+        System.out.println();
+
 
         // END FASE 3.
 
         // START FASE 4
-
-        System.out.println("   ");
-        System.out.println("START FASE 4");
-        System.out.println("   ");
 
         boolean FinalVerification = VerificationYear;
 
@@ -137,12 +121,7 @@ public class Main {
 
         System.out.println("My year is a Leap Year? " + FinalVerification);
 
-        System.out.println("   ");
-        System.out.println("END FASE 4");
-
         // END FASE 4.
-
-
 
     }
 }
